@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>UD Web</title>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+
+	<body>
+		<header>
+			<h1>Web IES Camp</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Información general</a></li>
+				<li><a href="oferta-formativa.html">Oferta formativa</a></li>
+				<li><a href="contacta.html">Contacta con nosotros</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h2>Contacta con nosotros</h2>
+			<form>
+				<fieldset>
+					<legend>Información de contacto</legend>
+					<label for="name">Nombre:</label>
+					<input type="text" id="name" >
+
+					<label for="surname">Apellidos:</label>
+					<input type="text" id="surname" >
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" >
+				</fieldset>
+
+				<fieldset>
+					<legend>Edad</legend>
+					<label for="age">Edad:</label>
+					<select name="age" id="age">
+						<option value="<18">Menor</option>
+						<option value="18-65" selected>Adulto/a</option>
+						<option value=">65">Jubilado/a</option>
+					</select>
+				</fieldset>
+
+				<fieldset>
+					<legend>Formación</legend>
+					<div>
+						<input
+							type="radio"
+							name="education"
+							id="sin-estudios"
+							value="sin-estudios"
+						>
+						<label for="sin-estudios">Sin estudios</label>
+					</div>
+					<div>
+						<input
+							type="radio"
+							name="education"
+							id="bachillerato"
+							value="bachillerato"
+						>
+						<label for="bachillerato">Bachillerato</label>
+					</div>
+					<div>
+						<input
+							type="radio"
+							name="education"
+							id="fp"
+							value="fp"
+						>
+						<label for="fp">Formación profesional</label>
+					</div>
+					<div>
+						<input
+							type="radio"
+							name="education"
+							id="otros"
+							value="otros"
+						>
+						<label for="otros">Otros</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Mensaje</legend>
+					<div>
+						<input
+							list="courses"
+							name="course"
+							id="course"
+							placeholder="Selecciona el grado"
+						>
+						<datalist id="courses">
+							<option value="ASIR"></option>
+							<option value="DAW"></option>
+							<option value="DAM"></option>
+						</datalist>
+					</div>
+					<div>
+						<div>
+							<label for="message">Escribe tu mensaje:</label>
+						</div>
+						<textarea
+							name="message"
+							id="message"
+							cols="40"
+							rows="8"
+						></textarea>
+					</div>
+					<input type="submit" value="Enviar" >
+				</fieldset>
+			</form>
+		</main>
+		<footer>Diseñado por IES Camp de Morvedre. 2023</footer>
+	</body>
+</html>
