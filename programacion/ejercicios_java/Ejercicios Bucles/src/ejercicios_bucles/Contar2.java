@@ -20,7 +20,9 @@ public class Contar2 {
         } else if (num1 == num2){
             System.out.println("Los número son iguales");
         } else {
-            System.out.println("Solo se contar hacia adelante");
+            for (int i = num2; i <= num1; i++) {
+                System.out.println(i);
+            }
         }
     }
 }

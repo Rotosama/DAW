@@ -15,8 +15,10 @@ public class ParImpar15 {
             System.out.println("Escribe un número:");
             number = read.nextInt();
             if (number % 2 == 0) {
+                System.out.println("Es par");
                 odd ++;
             } else {
+                System.out.println("Es impar");
                 even ++;
             }
         }
