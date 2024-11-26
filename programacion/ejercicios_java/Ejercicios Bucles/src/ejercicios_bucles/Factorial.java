@@ -1,3 +1,5 @@
+//Programa que me permite calcular el factorial de una serie de números acabada con la
+//introducción del número -1.
 package ejercicios_bucles;
 
 import java.util.Scanner;
@@ -10,7 +12,7 @@ public class Factorial {
 
         do {
             System.out.println("Introduce un número para saber su factorial:");
-            System.out.println("Si quieres salir introduce -1");
+            System.out.println("Para salir: -1");
             number = read.nextInt();
 
             if (number != -1) {
