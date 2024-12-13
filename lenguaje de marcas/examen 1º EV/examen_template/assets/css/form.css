@@ -1,0 +1,28 @@
+/* Estilos para el form, no hace falta que lo tengais aquí pero es conveniente para tenerlo un poco más ordenado */
+:root {
+	--color-lighter: #f3f3e0;
+	--color-light: #cbdceb;
+	--color-primary: #608bc1;
+	--color-dark: #133e87;
+}
+form {
+}
+.form {
+	padding: 20px 10px;
+	border-radius: 1%;
+}
+form input {
+	background-color: var(--color-light);
+	padding: 6px;
+	margin-bottom: 8px;
+}
+form input[type="submit"] {
+	padding: 7px 15px;
+	border: none;
+}
+form input[type="text"] {
+	border-left: 2px solid var(--color-dark);
+	border-bottom: none;
+	border-top: none;
+	border-right: none;
+}

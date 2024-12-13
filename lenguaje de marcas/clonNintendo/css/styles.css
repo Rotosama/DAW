@@ -1,0 +1,33 @@
+/* Estilos base para el navbar */
+.navbar {
+	display: flex; /* Activa Flexbox */
+	justify-content: space-between; /* Espacios entre elementos */
+	align-items: center; /* Centra verticalmente */
+	padding: 10px 20px; /* Espaciado interno */
+	background-color: #e60012; /* Fondo del navbar */
+	border-bottom: 1px solid #ddd; /* Línea inferior opcional */
+}
+
+/* Sección izquierda: Logo */
+.navbar-left .logo {
+	width: 120px; /* Ajusta el tamaño del logo */
+	height: auto;
+}
+
+/* Sección derecha: Íconos */
+.navbar-right {
+	display: flex; /* Flexbox para los íconos */
+	gap: 20px; /* Espaciado entre íconos */
+}
+
+.icon {
+	width: 24px; /* Tamaño del ícono */
+	height: 24px;
+	cursor: pointer; /* Añade un puntero al pasar el mouse */
+	fill: #333; /* Color del ícono */
+	transition: fill 0.3s ease; /* Efecto al pasar el mouse */
+}
+
+.icon:hover {
+	fill: #e60012; /* Color rojo (Nintendo) al pasar el mouse */
+}
